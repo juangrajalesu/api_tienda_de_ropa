@@ -1,0 +1,32 @@
+@api = http://localhost:4000
+
+
+GET {{api}}/clothes
+
+###
+POST {{api}}/clothes
+Content-Type: application/json
+
+{
+    "img":"1",
+    "title":"Tennis",
+    "price":201
+}
+
+###
+
+GET {{api}}/clothes/1
+###
+
+PUT  {{api}}/clothes/60c1940bf522755f9c7716
+Content-Type: application/json
+
+{
+    "img":"./img/1",
+    "title":"Black t-shirt",
+    "price":20
+}
+
+###
+
+DELETE {{api}}/clothes/60c3741b65e947599ce90451
